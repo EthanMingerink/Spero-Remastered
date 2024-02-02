@@ -58,5 +58,15 @@ async function startProgram() {
 	stopRoll()
 	setMainLed({ r:0, g:255, b:0})
 
+	//Heading to sound color but did not make it
+	setHeading(85)
+	setSpeed(45)
+	await delay(1.45)
+	stopRoll()
+	setHeading(0)
+	setSpeed(50)
+	await delay(1.2)
+	stopRoll()
+	
 
 	}
