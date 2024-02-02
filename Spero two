@@ -36,10 +36,19 @@ async function startProgram() {
 	stopRoll()
 	setMainLed({ r: 255, g: 0, b: 0})
 
+	//play Sound 2
+	setHeading(120)
+	setSpeed(25)
+	await delay(2.05)
+	stopRoll()
+	setHeading(40)  
+	setSpeed(40)
+	await delay(1.77)
+	stopRoll()
+	await Sound.EightBit.SecretFound.play(true)
 
+	//Show Green color
 
-
-	
 
 
 	}
