@@ -48,7 +48,15 @@ async function startProgram() {
 	await Sound.EightBit.SecretFound.play(true)
 
 	//Show Green color
-
+	setHeading(120)
+	setSpeed(35)
+	await delay(1.25)
+	stopRoll()
+	setHeading(175)
+	setSpeed(32.5)
+	await delay(1.45)
+	stopRoll()
+	setMainLed({ r:0, g:255, b:0})
 
 
 	}
